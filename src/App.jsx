@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
+import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
@@ -11,11 +12,13 @@ function App() {
     <>
       <Navbar />
 
-      <Routes>
+      <Container>
+        <Routes>
 
-        <Route path='/' element={<Home />} />
+          <Route path='/' element={<Home />} />
 
-      </Routes>
+        </Routes>
+      </Container>
     </>
   )
 }

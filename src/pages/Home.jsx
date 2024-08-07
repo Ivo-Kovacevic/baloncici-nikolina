@@ -1,12 +1,12 @@
+import HeroText from '../components/HeroText'
 import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
 
 function Home() {
 
     return(
         <>
-            <Container>
-                <h1>Home</h1>
-            </Container>
+            <HeroText />
         </>
     )
 }

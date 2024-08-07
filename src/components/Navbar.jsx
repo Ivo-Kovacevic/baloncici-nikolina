@@ -13,7 +13,7 @@ function Navbar() {
             <AppBar position='static' sx={{ bgcolor: 'transparent' }}>
                 <Toolbar component={Container}>
                     <Box flexGrow={1}>
-                        <Typography variant='h4'>Baloncici</Typography>
+                        <Typography variant='h4'>Balončići</Typography>
                     </Box>
                     <Stack direction='row' spacing={2}>
                         <Button>POČETNA</Button>
