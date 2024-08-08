@@ -13,11 +13,14 @@ function HeroText() {
         textAlign: 'center',
         margin: {
           xs: '30vh 0',
-          md: '35vh 0',
+          sm: '35vh 0',
         },
       }}
     >
-      Uzleti s nama u svijet balonske mašte
+
+      {/*&nbsp; (non breaking space) is used so sentence is split into new line instead of just one word going into new line*/}
+      Uzleti s nama u&nbsp;svijet&nbsp;balonske&nbsp;mašte
+      
     </Typography>
   );
 }

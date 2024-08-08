@@ -15,7 +15,16 @@ function Navbar() {
                     <Box flexGrow={1}>
                         <Typography variant='h4'>Balončići</Typography>
                     </Box>
-                    <Stack direction='row' spacing={2}>
+                    <Stack
+                        direction='row'
+                        spacing={2}
+                        sx={{
+                            display: {
+                                xs: 'none',
+                                sm: 'flex',
+                            },
+                        }}
+                    >
                         <Button>POČETNA</Button>
                         <Button>DEKORACIJE</Button>
                         <Button>KONTAKT</Button>
