@@ -8,11 +8,11 @@ function Footer() {
     return(
         <>
             <Container sx={{ display: 'flex', my: 5 }}>
-                <Typography flexGrow={1}>Balončići</Typography>
+                <Typography flexGrow={1}>Balončići 2024</Typography>
                 <Stack direction='row' spacing={2}>
                     <FacebookIcon />
                     <InstagramIcon />
-                    <Typography>Contact</Typography>
+                    <Typography>Kontakt</Typography>
                 </Stack>
             </Container>
         </>
