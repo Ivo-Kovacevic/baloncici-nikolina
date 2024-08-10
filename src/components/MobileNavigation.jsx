@@ -11,6 +11,8 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
+import { Link as RouterLink } from 'react-router-dom'
+
 export default function MobileNavigation() {
 
   const [open, setOpen] = React.useState(false);
@@ -33,7 +35,7 @@ export default function MobileNavigation() {
         <List>
         {['POČETNA', 'DEKORACIJE', 'KONTAKT'].map((text, index) => (
           <ListItem key={text} disablePadding>
-            <ListItemButton>
+            <ListItemButton component={RouterLink} to={index===0 ? '/' : text.toLowerCase()}>
               <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>

@@ -5,6 +5,8 @@ import Typography from '@mui/material/Typography'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
+import Decorations from './pages/Decorations'
+import Contact from './pages/Contact'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +19,8 @@ function App() {
         <Routes>
 
           <Route path='/' element={<Home />} />
+          <Route path='/dekoracije' element={<Decorations />} />
+          <Route path='/kontakt' element={<Contact />} />
 
         </Routes>
       </Container>

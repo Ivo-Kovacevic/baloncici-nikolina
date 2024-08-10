@@ -1,5 +1,6 @@
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack'
+import { Link as RouterLink } from 'react-router-dom'
 
 function DesktopNavigation() {
 
@@ -15,9 +16,9 @@ function DesktopNavigation() {
                     },
                 }}
             >
-                <Button>POČETNA</Button>
-                <Button>DEKORACIJE</Button>
-                <Button>KONTAKT</Button>
+                <Button component={RouterLink} to='/'>POČETNA</Button>
+                <Button component={RouterLink} to='/dekoracije'>DEKORACIJE</Button>
+                <Button component={RouterLink} to='/kontakt'>KONTAKT</Button>
             </Stack>
         </>
     );
