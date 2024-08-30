@@ -22,7 +22,7 @@ export default function MobileNavigation() {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 300 }} role="presentation">
+    <Box sx={{ width: 300 }} role="presentation" onClick={toggleDrawer(false)}>
 
         <ListItem disablePadding>
             <ListItemButton>
