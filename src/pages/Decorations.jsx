@@ -1,9 +1,11 @@
-
+import Header from "../components/Header";
 
 function Decorations() {
-    return(
+    return (
         <>
-        
+            <Header />
+
+            {/* <Images /> */}
         </>
     );
 }
